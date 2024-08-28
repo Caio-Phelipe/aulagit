@@ -3,23 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade Git</title>
+    <title>Mensagem do Usuário</title>
     <style>
         body {
-            background-color: #f0f0f0; /* Cor de fundo */
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
         }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
         h1 {
-            color: #333; /* Cor do texto */
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <h1>Atividade Git</h1>
+    <div class="container">
+        <h1>Insira sua mensagem:</h1>
+        <input type="text" id="userMessage" placeholder="Digite sua mensagem aqui">
+        <button onclick="displayMessage()">Enviar</button>
+
+        <h2>Sua mensagem:</h2>
+        <p id="messageDisplay"></p>
+    </div>
+
+    <script>
+        function displayMessage() {
+            const message = document.getElementById('userMessage').value;
+
+            document.getElementById('messageDisplay').textContent = message;
+        }
+    </script>
 </body>
 </html>
