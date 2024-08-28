@@ -1,4 +1,4 @@
 # aulagit
 Nome: Caio Phelipe
 
-O Git é um sistema de controle de versão distribuído, amplamente utilizado no desenvolvimento de software. Ele permite que desenvolvedores rastreiem mudanças no código, colaborem eficientemente em projetos e revertam versões anteriores se necessário. O Git é essencial para gerenciar projetos de forma organizada, garantindo integridade e histórico das alterações.
+Este código HTML cria uma página simples onde o usuário pode inserir uma mensagem em um campo de texto e, ao clicar no botão "Enviar", a mensagem é exibida na tela. A página possui um plano de fundo leve e um layout centralizado com estilo moderno e interativo.
